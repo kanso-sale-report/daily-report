@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #001660;
+}
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #0000003d;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.overlay .box{
+    padding: 20px;
+    border-radius: 10px;
+    color: #001660;
+    background: #ff8e98;
+    box-shadow: 0 3px 40px rgba(0, 0, 0, 0.13);
+    font-weight: 500;
+}
+.wrapper{
+    width: 350px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 3px 40px rgba(0, 0, 0, 0.13);
+}
+.wrapper form .input-field{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.wrapper form .input-field label{
+    display: black;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 700;
+}
+.wrapper form .input-field label span{
+    color: #f00;
+}
+.wrapper form .input-field input,
+.wrapper form .input-field textarea
+{
+    width: 100%;
+    height: 25px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #e9edf2;
+    border: 2px solid #c7cbd1;
+    outline: none;
+}
+
+.wrapper form .input-field input:focus,
+.wrapper form .input-field textarea:focus{
+    border: 2px solid #32b4f5;
+}
+
+.wrapper form .input-field textarea{
+    height: 100px;
+    resize: none;
+}
+.wrapper form button{
+    float: right;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: #ff5361;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 3px 20px #32b4f548;
+    cursor: pointer;
+}
+.wrapper form button:hover{
+    transition: 0.25;
+    background: #ff3445;
+}
+
+.wrapper form button:active{
+    transition: 0.25;
+    background: #ff7480;
+}

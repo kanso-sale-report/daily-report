@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Sale Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="box">
+            <p>Submitted successfully, hope you worked hard today!</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <form name="google-sheet" method="POST">
+            <div class="input-field">
+              <label for="name">Name <span>*</span></label>
+              <input type="text" name="Name" id="name" placeholder="Your name" required>
+            </div>
+            <div class="input-field">
+              <label for="date">Date <span>*</span></label>
+              <input type="date" name="Date" id="date" placeholder="Date" required>
+            </div>
+            <div class="input-field">
+              <label for="town">Town <span>*</span></label>
+              <input type="text" name="Town" id="town" placeholder="Town" required>
+            </div>
+            <div class="input-field">
+              <label for="market">Market <span>*</span></label>
+              <input type="text" name="Market" id="market" placeholder="Today's Market" required>
+            </div>
+            <div class="input-field">
+              <label for="tc">TC <span>*</span></label>
+              <input type="number" name="TC" id="tc" placeholder="TC" required>
+            </div>
+            <div class="input-field">
+              <label for="pc">PC <span>*</span></label>
+              <input type="number" name="PC" id="pc" placeholder="PC" required>
+            </div>
+            <div class="input-field">
+              <label for="sale">Sale <span>*</span></label>
+              <input type="number" name="Sale" id="sale" placeholder="Sale" required>
+            </div>
+            <div class="input-field">
+              <label for="am">Additional details</label>
+              <textarea name="Additional_details" id="am" placeholder="Additional details... "></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby7cAdpl7vlWkao3TILZaav_T0O4258Cgpkd9Hev8IzZEGxiYiXx8uqGXovmMJveZYyEQ/exec'
+        const formElement = document.forms['google-sheet']
+      
+        formElement.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(formElement)})
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
