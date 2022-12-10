@@ -11,6 +11,12 @@ body{
     min-height: 100vh;
     background: #001660;
 }
+.wrapper {
+    /* other styles */
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* other styles */
+  }  
 .overlay{
     position: fixed;
     width: 100%;
@@ -24,9 +30,45 @@ body{
     padding: 20px;
     border-radius: 10px;
     color: #001660;
-    background: #ff8e98;
+    background: #fff;
     box-shadow: 0 3px 40px rgba(0, 0, 0, 0.13);
     font-weight: 500;
+}
+.loading {
+    /* Set the size and position of the loading animation */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    /* Hide the loading animation by default */
+    display: none;
+    /* Add a transparent background color */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.spinner {
+    /* Set the size and position of the spinner */
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    /* Style the spinner */
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .wrapper{
     width: 350px;
@@ -39,8 +81,9 @@ body{
     width: 100%;
     margin-bottom: 10px;
 }
+
 .wrapper form .input-field label{
-    display: black;
+    display: block;
     width: 100%;
     font-size: 12px;
     font-weight: 700;
@@ -90,3 +133,73 @@ body{
     transition: 0.25;
     background: #ff7480;
 }
+
+@media only screen and (max-width: 480px) {
+    /* Apply styles for mobile devices with screen width less than or equal to 480px */
+    body {
+      display: block;
+      padding: 10px;
+    }
+  
+    .wrapper {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .wrapper form .input-field {
+      width: calc(100% - 30px);
+    }
+  
+    .wrapper form .input-field input,
+    .wrapper form .input-field textarea {
+      width: 100%;
+    }
+  
+    .wrapper form button {
+      float: none;
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+  #date {
+    color: #001660;
+    /* other styles */
+  }
+  .input-field select {
+    width: 100%;
+    height: 25px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: #e9edf2;
+    border: 2px solid #c7cbd1;
+    outline: none;
+  }
+  
+  .input-field select:focus {
+    border: 2px solid #32b4f5;
+  }
+  
+  .input-field {
+    display: block;
+    align-items: center;
+  }
+  option {
+  /* Add your styles here */
+  font-size: 14px;
+  padding: 10px;
+  color: #333;
+  background-color: #fff;
+}
+.wrapper form .input-field select option {
+    width: 100%;
+    height: 25px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #e9edf2;
+    border: 2px solid #c7cbd1;
+    outline: none;
+    }
+.wrapper form .input-field select option {
+border-radius: 10px;
+}    
+

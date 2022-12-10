@@ -7,6 +7,46 @@
     <title>Daily Sale Report</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="glass.css"> -->
+    <style>
+      /* Add this to your CSS file or the <style> tag in the <head> of your HTML document */
+      .loading {
+          /* Set the size and position of the loading animation */
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 999;
+          /* Hide the loading animation by default */
+          display: none;
+          /* Add a transparent background color */
+          background-color: rgba(0, 0, 0, 0.5);
+      }
+      .spinner {
+          /* Set the size and position of the spinner */
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -30px;
+          margin-left: -30px;
+          /* Style the spinner */
+          border: 8px solid #f3f3f3;
+          border-top: 8px solid #3498db;
+          border-radius: 50%;
+          animation: spin 2s linear infinite;
+      }
+      @keyframes spin {
+          0% {
+              transform: rotate(0deg);
+          }
+          100% {
+              transform: rotate(360deg);
+          }
+      }
+  </style>  
 </head>
 <body>
     <div class="overlay">
@@ -14,12 +54,35 @@
             <p>Submitted successfully, hope you worked hard today!</p>
         </div>
     </div>
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+    </div>
     <div class="wrapper">
+      <div class="shape"></div>
+      <div class="shape"></div>
         <form name="google-sheet" method="POST">
             <div class="input-field">
-              <label for="name">Name <span>*</span></label>
-              <input type="text" name="Name" id="name" placeholder="Your name" required>
-            </div>
+              <label for="name" required>Name <span>*</span></label>
+                <select id="name" name="Name" placeholder="Choose your name" pattern="(Abhishek Jha|Abhishek Shukla|Anand Sharma|Balvinder|Devendra Singh|Harish Chander Singh|Karuna Shankar Tiwari|Kishan Kumar|Ranjeet Kumar|Rekha|Rishabh Jain|Sanjay Kumar|Sachin Gupta|Vinod Kumar|Vinod R Tiwari)">
+                <option disabled selected>Your Name</option>
+                <option>Abhishek Jha</option>
+                <option>Abhishek Shukla</option>
+                <option>Anand Sharma</option>
+                <option>Balvinder</option>
+                <option>Devendra Singh</option>
+                <option>Harish Chander Singh</option>
+                <option>Karuna Shankar Tiwari</option>
+                <option>Kishan Kumar</option>
+                <option>Ranjeet Kumar</option>
+                <option>Rekha</option>
+                <option>Rishabh Jain</option>
+                <option>Sanjay Kumar</option>
+                <option>Sachin Gupta</option>
+                <option>Vinod Kumar</option>
+                <option>Vinod R Tiwari</option>
+                </select>
+            </div>          
             <div class="input-field">
               <label for="date">Date <span>*</span></label>
               <input type="date" name="Date" id="date" placeholder="Date" required>
