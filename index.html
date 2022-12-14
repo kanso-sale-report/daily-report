@@ -7,7 +7,6 @@
     <title>Daily Sale Report</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="glass.css"> -->
     <style>
       /* Add this to your CSS file or the <style> tag in the <head> of your HTML document */
       .loading {
@@ -63,8 +62,9 @@
       <div class="shape"></div>
         <form name="google-sheet" method="POST">
             <div class="input-field">
-              <label for="name" required>Name <span>*</span></label>
-                <select id="name" name="Name" placeholder="Choose your name" pattern="(Abhishek Jha|Abhishek Shukla|Anand Sharma|Balvinder|Devendra Singh|Harish Chander Singh|Karuna Shankar Tiwari|Kishan Kumar|Ranjeet Kumar|Rekha|Rishabh Jain|Sanjay Kumar|Sachin Gupta|Vinod Kumar|Vinod R Tiwari)">
+              <label for="name">Name<span>*</span></label>
+              <input type="text" name="Name" id="name" list="names" placeholder="Your Name" required> 
+                <datalist id="names" required> 
                 <option disabled selected>Your Name</option>
                 <option>Abhishek Jha</option>
                 <option>Abhishek Shukla</option>
@@ -82,7 +82,7 @@
                 <option>Sachin Gupta</option>
                 <option>Vinod Kumar</option>
                 <option>Vinod R Tiwari</option>
-                </select>
+                </datalist>
             </div>          
             <div class="input-field">
               <label for="date">Date <span>*</span></label>
@@ -90,7 +90,92 @@
             </div>
             <div class="input-field">
               <label for="town">Town <span>*</span></label>
-              <input type="text" name="Town" id="town" placeholder="Town" required>
+              <input type="text" name="Town" id="town" list="towns" placeholder="Town" required>
+              <datalist id="towns" required>
+                <option disabled selected value="">Your town</option>
+                <option>Aligarh</option>
+                <option>Allahabad</option>
+                <option>Ambedkar Nagar</option>
+                <option>Auraiya</option>
+                <option>Azamgarh</option>
+                <option>Bagpat</option>
+                <option>Bahraich</option>
+                <option>Ballia</option>
+                <option>Balrampur</option>
+                <option>Banda</option>
+                <option>Barabanki</option>
+                <option>Bareilly</option>
+                <option>Basti</option>
+                <option>Bijnor</option>
+                <option>Budaun</option>
+                <option>Bulandshahr</option>
+                <option>Central Delhi</option>
+                <option>Chandauli</option>
+                <option>Chhatrapati Shahuji Maharaj Nagar</option>
+                <option>Chitrakoot</option>
+                <option>Deoria</option>
+                <option>East Delhi</option>
+                <option>Etah</option>
+                <option>Etawah</option>
+                <option>Faizabad</option>
+                <option>Farrukhabad</option>
+                <option>Fatehpur</option>
+                <option>Firozabad</option>
+                <option>Gautam Buddh Nagar</option>
+                <option>Ghaziabad</option>
+                <option>Ghazipur</option>
+                <option>Gonda</option>
+                <option>Gorakhpur</option>
+                <option>Hamirpur</option>
+                <option>Hardoi</option>
+                <option>Jalaun</option>
+                <option>Jaunpur district</option>
+                <option>Jhansi</option>
+                <option>Jyotiba Phule Nagar</option>
+                <option>Kannauj</option>
+                <option>Kanpur</option>
+                <option>Kanshi Ram Nagar</option>
+                <option>Kaushambi</option>
+                <option>Kushinagar</option>
+                <option>Lakhimpur Kheri</option>
+                <option>Lalitpur</option>
+                <option>Lucknow</option>
+                <option>Mahamaya Nagar</option>
+                <option>Maharajganj</option>
+                <option>Mahoba</option>
+                <option>Mainpuri</option>
+                <option>Mathura</option>
+                <option>Mau</option>
+                <option>Meerut</option>
+                <option>Mirzapur</option>
+                <option>Moradabad</option>
+                <option>Muzaffarnagar</option>
+                <option>New Delhi</option>
+                <option>North Delhi</option>
+                <option>North East Delhi</option>
+                <option>North West Delhi</option>
+                <option>Panchsheel Nagar district (Hapur)</option>
+                <option>Pilibhit</option>
+                <option>Pratapgarh</option>
+                <option>Raebareli</option>
+                <option>Ramabai Nagar (Kanpur Dehat)</option>
+                <option>Rampur</option>
+                <option>Saharanpur</option>
+                <option>Sant Kabir Nagar</option>
+                <option>Sant Ravidas Nagar</option>
+                <option>Shahjahanpur</option>
+                <option>Shamli</option>
+                <option>Shravasti</option>
+                <option>Siddharthnagar</option>
+                <option>Sitapur</option>
+                <option>Sonbhadra</option>
+                <option>South Delhi</option>
+                <option>South West Delhi</option>
+                <option>Sultanpur</option>
+                <option>Unnao</option>
+                <option>Varanasi</option>
+                <option>West Delhi</option>
+              </datalist>
             </div>
             <div class="input-field">
               <label for="market">Market <span>*</span></label>

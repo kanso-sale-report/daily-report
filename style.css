@@ -1,205 +1,200 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #001660;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #001660;
 }
 .wrapper {
-    /* other styles */
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    /* other styles */
-  }  
+  /* other styles */
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  /* other styles */
+}  
 .overlay{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #0000003d;
-    display: none;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #0000003d;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 .overlay .box{
-    padding: 20px;
-    border-radius: 10px;
-    color: #001660;
-    background: #fff;
-    box-shadow: 0 3px 40px rgba(0, 0, 0, 0.13);
-    font-weight: 500;
+  padding: 20px;
+  border-radius: 10px;
+  color: #001660;
+  background: #fff;
+  box-shadow: 0 3px 40px rgba(0, 0, 0, 0.13);
+  font-weight: 500;
 }
 .loading {
-    /* Set the size and position of the loading animation */
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    /* Hide the loading animation by default */
-    display: none;
-    /* Add a transparent background color */
-    background-color: rgba(0, 0, 0, 0.5);
+  /* Set the size and position of the loading animation */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /* Hide the loading animation by default */
+  display: none;
+  /* Add a transparent background color */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .spinner {
-    /* Set the size and position of the spinner */
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -30px;
-    margin-left: -30px;
-    /* Style the spinner */
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db;
-    border-radius: 50%;
-    animation: spin 2s linear infinite;
+  /* Set the size and position of the spinner */
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -30px;
+  margin-left: -30px;
+  /* Style the spinner */
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
 }
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
 }
 .wrapper{
-    width: 350px;
-    background: #fff;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 3px 40px rgba(0, 0, 0, 0.13);
+  width: 350px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 3px 40px rgba(0, 0, 0, 0.13);
 }
 .wrapper form .input-field{
-    width: 100%;
-    margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .wrapper form .input-field label{
-    display: block;
-    width: 100%;
-    font-size: 12px;
-    font-weight: 700;
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 700;
 }
 .wrapper form .input-field label span{
-    color: #f00;
+  color: #f00;
 }
 .wrapper form .input-field input,
 .wrapper form .input-field textarea
 {
-    width: 100%;
-    height: 25px;
-    padding: 10px 15px;
-    border-radius: 10px;
-    background-color: #e9edf2;
-    border: 2px solid #c7cbd1;
-    outline: none;
+  width: 100%;
+  height: 25px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #e9edf2;
+  border: 2px solid #c7cbd1;
+  outline: none;
 }
 
 .wrapper form .input-field input:focus,
 .wrapper form .input-field textarea:focus{
-    border: 2px solid #32b4f5;
+  border: 2px solid #32b4f5;
 }
 
 .wrapper form .input-field textarea{
-    height: 100px;
-    resize: none;
+  height: 100px;
+  resize: none;
 }
 .wrapper form button{
-    float: right;
-    padding: 15px 30px;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    background: #ff5361;
-    color: #fff;
-    font-weight: 500;
-    box-shadow: 0 3px 20px #32b4f548;
-    cursor: pointer;
+  float: right;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background: #ff5361;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 3px 20px #32b4f548;
+  cursor: pointer;
 }
 .wrapper form button:hover{
-    transition: 0.25;
-    background: #ff3445;
+  transition: 0.25;
+  background: #ff3445;
 }
 
 .wrapper form button:active{
-    transition: 0.25;
-    background: #ff7480;
+  transition: 0.25;
+  background: #ff7480;
 }
 
 @media only screen and (max-width: 480px) {
-    /* Apply styles for mobile devices with screen width less than or equal to 480px */
-    body {
-      display: block;
-      padding: 10px;
-    }
-  
-    .wrapper {
-      width: 100%;
-      padding: 15px;
-    }
-  
-    .wrapper form .input-field {
-      width: calc(100% - 30px);
-    }
-  
-    .wrapper form .input-field input,
-    .wrapper form .input-field textarea {
-      width: 100%;
-    }
-  
-    .wrapper form button {
-      float: none;
-      margin-top: 20px;
-      width: 100%;
-    }
+  /* Apply styles for mobile devices with screen width less than or equal to 480px */
+  body {
+    display: flex;
+    padding: 10px;
   }
-  #date {
-    color: #001660;
-    /* other styles */
-  }
-  .input-field select {
+
+  .wrapper {
     width: 100%;
-    height: 25px;
-    padding-left: 10px;
-    border-radius: 10px;
-    background-color: #e9edf2;
-    border: 2px solid #c7cbd1;
-    outline: none;
+    padding: 15px;
   }
-  
-  .input-field select:focus {
-    border: 2px solid #32b4f5;
+
+  .wrapper form .input-field input,
+  .wrapper form .input-field textarea {
+    width: 100%;
   }
-  
-  .input-field {
-    display: block;
-    align-items: center;
+
+  .wrapper form button {
+    float: none;
+    margin-top: 20px;
+    width: 100%;
   }
-  option {
-  /* Add your styles here */
-  font-size: 14px;
-  padding: 10px;
-  color: #333;
-  background-color: #fff;
+}
+#date {
+  color: #001660;
+  /* other styles */
+}
+.input-field select {
+  width: 100%;
+  height: 25px;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: #e9edf2;
+  border: 2px solid #c7cbd1;
+  outline: none;
+}
+
+.input-field select:focus {
+  border: 2px solid #32b4f5;
+}
+
+.input-field {
+  display: block;
+  align-items: center;
+}
+option {
+/* Add your styles here */
+font-size: 14px;
+padding: 10px;
+color: #333;
+background-color: #fff;
 }
 .wrapper form .input-field select option {
-    width: 100%;
-    height: 25px;
-    padding: 10px 15px;
-    border-radius: 10px;
-    background-color: #e9edf2;
-    border: 2px solid #c7cbd1;
-    outline: none;
-    }
+  width: 100%;
+  height: 25px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #e9edf2;
+  border: 2px solid #c7cbd1;
+  outline: none;
+  }
 .wrapper form .input-field select option {
 border-radius: 10px;
 }    
-
