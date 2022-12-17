@@ -24,7 +24,7 @@ const employeeNames = [
     'Karuna Shankar Tiwari',
     'Kishan Kumar',
     'Partosh Jha',
-    'Rambabu',
+    'Ram Babu',
     'Rajesh Mishra',
     'Ranjeet Kumar',
     'Rekha',
