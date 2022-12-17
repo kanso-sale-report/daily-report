@@ -20,6 +20,7 @@ const employeeNames = [
     'Balvinder',
     'Devendra Singh',
     'Dileep Kumar',
+    'Durgesh Shukla',
     'Harish Chander Singh',
     'Karuna Shankar Tiwari',
     'Kishan Kumar',
