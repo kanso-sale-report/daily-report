@@ -17,6 +17,7 @@ const employeeNames = [
     'Abhishek Shukla',
     'Aman Sharma',
     'Anand Sharma',
+    'Ajeet Kumar Verma',
     'Balvinder',
     'Devendra Singh',
     'Dileep Kumar',
@@ -31,7 +32,9 @@ const employeeNames = [
     'Rekha',
     'Rishabh Jain',
     'Sanjay Kumar',
+    'Satish Kumar Gupta',
     'Sachin Gupta',
+    'Umesh Srivastav',
     'Vinod Kumar',
     'Vinod R Tiwari',
 ]
