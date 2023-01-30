@@ -28,7 +28,6 @@ const employeeNames = [
     'Rajesh Mishra',
     'Ranjeet Kumar',
     'Satish Kumar Gupta',
-    'Sachin Gupta',
     'Umesh Srivastav',
     'Vinod Kumar',
     'Vinod R Tiwari',
