@@ -13,27 +13,15 @@ const pc = form.querySelector("#pc");
 const sale = form.querySelector("#sale");
 const am = form.querySelector("#am");
 const employeeNames = [
-    'Abhishek Jha',
-    'Abhishek Shukla',
     'Aman Sharma',
-    'Anand Sharma',
-    'Balvinder',
     'Devendra Singh',
     'Dileep Kumar',
     'Durgesh Shukla',
-    'Harish Chander Singh',
-    'Karuna Shankar Tiwari',
-    'Kishan Kumar',
-    'Navin Kumar',
     'Ram Babu',
     'Rajesh Mishra',
     'Ranjeet Kumar',
     'Sachin Gupta',
-    'Satish Kumar Gupta',
     'Sonam',
-    'Umesh Srivastav',
-    'Vinod Kumar',
-    'Vinod R Tiwari',
 ]
 const townNames = [
     'Central Delhi',
