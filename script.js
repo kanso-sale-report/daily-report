@@ -18,8 +18,8 @@ const employeeNames = [
     'Dileep Kumar',
     'Durgesh Shukla',
     'Ram Babu',
-    'Rajesh Mishra',
     'Ranjeet Kumar',
+    'Rajesh Singh',
     'Sachin Gupta',
     'Sonam',
 ]
